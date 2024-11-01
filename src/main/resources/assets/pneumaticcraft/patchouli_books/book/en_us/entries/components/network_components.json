@@ -6,7 +6,7 @@
   "pages": [
     {
       "type": "text",
-      "text": "These components are used primarily to set up a $(l:programming/security_station)Security Station/$, but some are also used as crafting components, and the $(l:components/network_components#network_storage)Network Storage/$ and $(l:components/network_components#network_api)Network API/$ can be used to store $(l:tools/drone)Drone/$ programs."
+      "text": "These components are used primarily to set up a $(l:machines/security_station)Security Station/$, but some are also used as crafting components, and the $(l:components/network_components#network_storage)Network Storage/$ and $(l:components/network_components#network_api)Network API/$ can be used to store $(l:tools/drone)Drone/$ programs."
     },
     {
       "type": "crafting",

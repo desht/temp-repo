@@ -6,7 +6,7 @@
   "pages": [
     {
       "type": "text",
-      "text": "$(thing)Logistics Frames/$ are attachable gadgets which are placed onto inventories or tanks to mark them as part of a $(thing)Logistics System/$.$(p)Placed frames can be configured by $(thing)right-clicking/$ with a $(l:tools/logistics_configurator)Logistics Configurator/$, and removed by $(thing)sneak+right-clicking/$ with the Configurator. Frames can also be configured in-hand by right-clicking the item form."
+      "text": "$(thing)Logistics Frames/$ are attachable gadgets which are placed onto inventories or tanks to mark them as part of a $(thing)Logistics System/$.$(p)Placed frames can be configured by $(thing)right-clicking/$ with a $(l:logistics/logistics_configurator)Logistics Configurator/$, and removed by $(thing)sneak+right-clicking/$ with the Configurator. Frames can also be configured in-hand by right-clicking the item form."
     },
     {
       "type": "text",

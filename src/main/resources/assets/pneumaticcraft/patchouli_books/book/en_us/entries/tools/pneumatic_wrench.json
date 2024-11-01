@@ -10,7 +10,7 @@
     },
     {
       "type": "text",
-      "text": "$(li)$(thing)Right-click/$ $(l:base_concepts/drones)Drones/$ to dismantle them, dropping them as an item.$(li)$(thing)Right-click/$ $(l:tubes/pressure_tubes)Pressure Tubes/$ to close/re-open sections to isolate them from each other.$(p)The $(item)Pneumatic Wrench/$ must be pressurized in a $(l:machines/charging_station)Charging Station/$ before use."
+      "text": "$(li)$(thing)Right-click/$ $(l:tools/drone)Drones/$ to dismantle them, dropping them as an item.$(li)$(thing)Right-click/$ $(l:tubes/pressure_tubes)Pressure Tubes/$ to close/re-open sections to isolate them from each other.$(p)The $(item)Pneumatic Wrench/$ must be pressurized in a $(l:machines/charging_station)Charging Station/$ before use."
     },
     {
       "type": "crafting",
