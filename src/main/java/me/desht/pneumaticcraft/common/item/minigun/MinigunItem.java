@@ -85,7 +85,7 @@ public class MinigunItem extends PressurizableItem implements
         IChargeableContainerProvider, IFOVModifierItem,
         IInventoryItem, IShiftScrollable {
     public static final int MAGAZINE_SIZE = 4;
-    private static final int NOT_LOCKED = -1;
+    public static final int NOT_LOCKED = -1;
 
     public MinigunItem() {
         super(ModItems.toolProps().component(ModDataComponents.MINIGUN_LOCKED_SLOT, NOT_LOCKED),

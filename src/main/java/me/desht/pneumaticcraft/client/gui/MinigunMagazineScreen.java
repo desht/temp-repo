@@ -17,6 +17,7 @@
 
 package me.desht.pneumaticcraft.client.gui;
 
+import me.desht.pneumaticcraft.client.util.ClientUtils;
 import me.desht.pneumaticcraft.client.util.GuiUtils;
 import me.desht.pneumaticcraft.common.block.entity.AbstractPneumaticCraftBlockEntity;
 import me.desht.pneumaticcraft.common.inventory.MinigunMagazineMenu;
@@ -45,7 +46,7 @@ public class MinigunMagazineScreen extends AbstractPneumaticCraftContainerScreen
 
         addInfoTab(GuiUtils.xlateAndSplit("gui.tooltip.item.pneumaticcraft.minigun"));
         addAnimatedStat(xlate("pneumaticcraft.gui.tab.minigun.slotInfo.title"), new ItemStack(ModItems.GUN_AMMO.get()), 0xFF0080C0, true)
-                .setText(GuiUtils.xlateAndSplit("pneumaticcraft.gui.tab.minigun.slotInfo"));
+                .setText(GuiUtils.xlateAndSplit("pneumaticcraft.gui.tab.minigun.slotInfo", ClientUtils.translateKeyBind(Minecraft.getInstance().options.keyPickItem)));
     }
 
     @Override

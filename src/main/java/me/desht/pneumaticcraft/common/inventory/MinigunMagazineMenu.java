@@ -31,6 +31,8 @@ import net.minecraft.world.inventory.ClickType;
 import net.minecraft.world.item.ItemStack;
 import net.neoforged.neoforge.items.SlotItemHandler;
 
+import static me.desht.pneumaticcraft.common.item.minigun.MinigunItem.NOT_LOCKED;
+
 public class MinigunMagazineMenu extends AbstractPneumaticCraftMenu<AbstractPneumaticCraftBlockEntity> {
     private final MinigunItem.MagazineHandler gunInv;
     private final InteractionHand hand;
@@ -66,16 +68,12 @@ public class MinigunMagazineMenu extends AbstractPneumaticCraftMenu<AbstractPneu
 
     @Override
     public void clicked(int slotId, int dragType, ClickType clickType, Player player) {
-        if (clickType == ClickType.CLONE && dragType == 2 && slotId >= 0 && slotId < MinigunItem.MAGAZINE_SIZE) {
-            // middle-click to lock a slot
+        if (clickType == ClickType.CLONE && slotId >= 0 && slotId < MinigunItem.MAGAZINE_SIZE) {
+            // middle-click (or whatever "pick block" is bound to) to lock a slot
             ItemStack gunStack = player.getItemInHand(hand);
             if (gunStack.getItem() instanceof MinigunItem) {
                 int slot = MinigunItem.getLockedSlot(gunStack);
-                if (slot == slotId) {
-                    gunStack.remove(ModDataComponents.MINIGUN_LOCKED_SLOT);
-                } else {
-                    gunStack.set(ModDataComponents.MINIGUN_LOCKED_SLOT, slotId);
-                }
+                gunStack.set(ModDataComponents.MINIGUN_LOCKED_SLOT, slot == slotId ? NOT_LOCKED : slotId);
                 if (player.level().isClientSide) {
                     player.playSound(SoundEvents.UI_BUTTON_CLICK.value(), 0.5f, 1.0f);
                 }

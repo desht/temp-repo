@@ -34,7 +34,6 @@ import net.minecraft.client.renderer.texture.MissingTextureAtlasSprite;
 import net.minecraft.client.renderer.texture.OverlayTexture;
 import net.minecraft.client.renderer.texture.TextureAtlas;
 import net.minecraft.client.renderer.texture.TextureAtlasSprite;
-import net.minecraft.client.resources.language.I18n;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.util.FormattedCharSequence;
@@ -239,7 +238,7 @@ public class GuiUtils {
     }
 
     public static List<Component> xlateAndSplit(String key, Object... params) {
-        return Arrays.stream(StringUtils.splitByWholeSeparator(I18n.get(key, params), TRANSLATION_LINE_BREAK))
+        return Arrays.stream(StringUtils.splitByWholeSeparator(Component.translatable(key, params).getString(), TRANSLATION_LINE_BREAK))
                 .map(Component::literal)
                 .collect(Collectors.toList());
     }

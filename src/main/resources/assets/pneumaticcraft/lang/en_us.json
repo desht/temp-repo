@@ -1670,7 +1670,7 @@
    "pneumaticcraft.gui.tab.liquidCompressor.fuel" : "Available Fuels",
    "pneumaticcraft.gui.tab.liquidHopper.mode.empty" : "Empty out tank.",
    "pneumaticcraft.gui.tab.liquidHopper.mode.leaveLiquid" : "Leave 1000mB in tank, to filter.",
-   "pneumaticcraft.gui.tab.minigun.slotInfo" : "The Minigun will normally draw ammo from the lowest-numbered slot which contains any ammo.\n\n§aMiddle-click§f a slot to lock that slot: when locked, the Minigun will draw ammo from that slot only. §aMiddle-click§f a locked slot to unlock it.\n\nLocking slots is useful if you're carrying multiple ammo types.",
+   "pneumaticcraft.gui.tab.minigun.slotInfo" : "The Minigun will normally draw ammo from the lowest-numbered slot which contains any ammo.\n\nPress §a%s§f on a slot to toggle locking that slot: when locked, the Minigun will draw ammo from that slot only.\n\nLocking slots is useful if you're carrying multiple ammo types.",
    "pneumaticcraft.gui.tab.minigun.slotInfo.title" : "Ammo Management",
    "pneumaticcraft.gui.tab.omnidirectionalHopper.mode.empty" : "Normal Hopper Operation.",
    "pneumaticcraft.gui.tab.omnidirectionalHopper.mode.leaveItem" : "Leave one item per slot, to filter.",
