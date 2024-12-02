@@ -53,6 +53,7 @@ import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.client.event.*;
+import net.neoforged.neoforge.event.tick.PlayerTickEvent;
 
 import java.util.List;
 
@@ -193,7 +194,8 @@ public class ClientEventHandler {
 
     @SubscribeEvent
     public static void onShiftScroll(InputEvent.MouseScrollingEvent event) {
-        if (ClientUtils.getClientPlayer().isCrouching()) {
+        Player player = ClientUtils.getClientPlayer();
+        if (player.isCrouching() && crouchSelected >= 0 && player.getInventory().selected == crouchSelected) {
             if (!tryHand(event, InteractionHand.MAIN_HAND)) tryHand(event, InteractionHand.OFF_HAND);
         }
     }
@@ -207,6 +209,19 @@ public class ClientEventHandler {
             return true;
         }
         return false;
+    }
+
+    private static int crouchSelected = -1;
+
+    @SubscribeEvent
+    public static void onPlayerTick(PlayerTickEvent.Pre event) {
+        if (event.getEntity().level().isClientSide) {
+            if (event.getEntity().isCrouching()) {
+                if (crouchSelected == -1) crouchSelected = event.getEntity().getInventory().selected;
+            } else {
+                crouchSelected = -1;
+            }
+        }
     }
 
     @SubscribeEvent
