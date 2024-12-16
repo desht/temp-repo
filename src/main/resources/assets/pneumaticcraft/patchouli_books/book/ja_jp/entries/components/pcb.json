@@ -15,19 +15,19 @@
     {
       "type": "text",
       "title": "方法その1",
-      "text": "この方法は当初利用できる唯一の方法であり、追加の自動化と加熱インフラストラクチャがなければやや時間がかかります。$(item)PCB/$を$(l:manufacturing/uv_light_box)UVライトボックス/$に入れて化学的に開発し、露出した$(item)空のPCB/$を$(l:manufacturing/etching_tank)エッチングタンク/$に入れて$(item)未組立のPCB/$に変換することができます。"
+      "text": "この方法は当初利用できる唯一の方法であり、追加の自動化と加熱インフラストラクチャがなければやや時間がかかります。$(item)PCB/$を$(l:manufacturing/uv_light_box)UVライトボックス/$に入れて化学的に開発し、露光した$(item)空のPCB/$を$(l:manufacturing/etching_tank)エッチングタンク/$に入れて$(item)未組立のPCB/$に変換することができます。"
     },
     {
       "type": "blasting",
       "title": "不良PCBのリサイクル",
       "recipe": "pneumaticcraft:empty_pcb_from_failed_pcb",
-      "text": "$(item)空のPCB/$が$(l:manufacturing/uv_light_box)UVライトボックス/$内で100%露出されていない場合、エッチングプロセスは失敗する可能性があります。$(item)不良PCB/$は$(item)溶鉱炉/$でリサイクルできます。"
+      "text": "$(item)空のPCB/$が$(l:manufacturing/uv_light_box)UVライトボックス/$内で100%露光されていない場合、エッチングプロセスは失敗する可能性があります。$(item)不良PCB/$は$(item)溶鉱炉/$でリサイクルできます。"
     },
     {
       "type": "spotlight",
       "title": "方法その2",
       "item": "pneumaticcraft:assembly_controller",
-      "text": "$(l:manufacturing/assembly_system)組立システム/$を作成できたら、それを使用して$(item)組立プログラム: レーザー/$で$(item)空のPCB/$を$(item)未組立のPCB/$に直接変換できます。この場合$(item)UVライトボックス/$で露出したり、$(item)エッチングタンク/$を使用する必要はありません。"
+      "text": "$(l:manufacturing/assembly_system)組立システム/$を作成できたら、それを使用して$(item)組立プログラム: レーザー/$で$(item)空のPCB/$を$(item)未組立のPCB/$に直接変換できます。この場合$(item)UVライトボックス/$で露光したり、$(item)エッチングタンク/$を使用する必要はありません。"
     },
     {
       "type": "text",

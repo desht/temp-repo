@@ -1769,7 +1769,7 @@
    "pneumaticcraft.gui.tab.problems.spawnerExtractor.finished" : "§fスポーナー抽出器が完成しました。\nこれで抽出器とその下の空のスポーナーを削除できます。",
    "pneumaticcraft.gui.tab.problems.thermal_compressor.no_temp_diff" : "§f温度差が不十分\n§0コンプレッサーの任意の側に熱いブロックを配置し、反対側に冷たいブロックを配置します。",
    "pneumaticcraft.gui.tab.problems.thermal_compressor.poor_temp_diff" : "§f温度差が小さい\n§0コンプレッサーの任意の側に熱いブロックを配置し、反対側に冷たいブロックを配置します。",
-   "pneumaticcraft.gui.tab.problems.uv_light_box.no_item" : "§fアイテムなし\n§0露出させるアイテムを挿入します。",
+   "pneumaticcraft.gui.tab.problems.uv_light_box.no_item" : "§fアイテムなし\n§0露光させるアイテムを挿入します。",
    "pneumaticcraft.gui.tab.problems.vacuum_trap.no_core" : "§fスポナーコアなし\n§0 Mobを捕獲するための(完全ではない)スポナーコアを挿入します。",
    "pneumaticcraft.gui.tab.problems.vacuum_trap.core_full" : "§fスポナーコアがいっぱい\n§0 スポナーコアをMobのためのスペースがある新しいものに置き換えます。",
    "pneumaticcraft.gui.tab.problems.vacuum_trap.no_memory_essence" : "§fメモリエッセンスが足りません\n§0タンクに少なくとも100MBのメモリエッセンスがあれば真空トラップの効率が大幅に上がります。メモリスティックまたは空中インターフェースを使用して経験からエッセンスを抽出できます。",
@@ -2218,6 +2218,6 @@
    "config.jade.plugin_immersiveengineering.multiblock_icon" : "マルチブロックアイコン",
    "config.jade.plugin_pneumaticcraft.tube_module" : "チューブモジュール",
    "config.jade.plugin_pneumaticcraft.redstone" : "レッドストーン",
-   "config.jade.plugin_pneumaticcraft.camo" : "明細",
+   "config.jade.plugin_pneumaticcraft.camo" : "迷彩",
    "config.jade.plugin_pneumaticcraft.pneumatic" : "空気圧"
 }
