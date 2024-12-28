@@ -35,6 +35,7 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.item.ItemStack;
+import org.lwjgl.glfw.GLFW;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -75,6 +76,17 @@ public class ElevatorScreen extends AbstractPneumaticCraftContainerScreen<Elevat
                 .setAlignment(WidgetLabel.Alignment.CENTRE).setColor(0xFFFFFFFF));
         floorNameStat.addSubWidget(cycleDown = new WidgetButtonExtended(5, statHeight - 39, 20, 20, ARROW_LEFT, button -> cycleFloor(-1)));
         floorNameStat.addSubWidget(cycleUp = new WidgetButtonExtended(105, statHeight - 39, 20, 20, ARROW_RIGHT, button -> cycleFloor(1)));
+    }
+
+    @Override
+    public boolean keyPressed(int keyCode, int scanCode, int modifiers) {
+        if (keyCode == GLFW.GLFW_KEY_ESCAPE) {
+            minecraft.player.closeContainer();
+        }
+
+        return floorNameField.keyPressed(keyCode, scanCode, modifiers)
+                || floorNameField.canConsumeInput()
+                || super.keyPressed(keyCode, scanCode, modifiers);
     }
 
     private void cycleFloor(int dir) {
