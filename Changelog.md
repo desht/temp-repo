@@ -8,6 +8,12 @@ Changes are in reverse chronological order; newest changes at the top.
 
 This release (and all future releases) is built for [Neoforge](https://neoforged.net/), and will _not_ work on [MinecraftForge](https://files.minecraftforge.net/)!
 
+## [7.0.4]
+
+### Fixed
+* Don't allow Mekanism tanks to be placed in PNC tank GUI slots
+  * Seems to lead to a client lockup. Ultimate cause undetermined and unlikely to be, given this is 1.20.4...
+
 ## [7.0.3]
 
 ### Fixed
