@@ -17,6 +17,8 @@
 
 package me.desht.pneumaticcraft.common.inventory.slot;
 
+import me.desht.pneumaticcraft.common.util.PneumaticCraftUtils;
+import me.desht.pneumaticcraft.lib.ModIds;
 import net.minecraft.world.item.ItemStack;
 import net.neoforged.neoforge.fluids.FluidUtil;
 import net.neoforged.neoforge.items.IItemHandler;
@@ -41,6 +43,10 @@ public class FluidContainerSlot extends SlotItemHandler {
 
     @Override
     public boolean mayPlace(@Nonnull ItemStack stack) {
+        if (PneumaticCraftUtils.getRegistryName(stack.getItem()).orElseThrow().getNamespace().equals(ModIds.MEKANISM)) {
+            // no Mek tanks, they cause a client lockup
+            return false;
+        }
         if (FluidUtil.getFluidHandler(stack).isPresent()) {
             return FluidUtil.getFluidContained(stack).map(fluidStack -> fluidStack.getAmount() >= minFluid).orElse(minFluid == 0);
         } else {
