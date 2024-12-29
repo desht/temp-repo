@@ -6,6 +6,18 @@ Changes are in reverse chronological order; newest changes at the top.
 
 # Minecraft 1.21.1
 
+## [8.2.6]
+
+### Fixed
+* Fixed a client lockup when attempting to insert a Mekanism fluid tank into a PNC fluid tank GUI slot
+  * Mekanism tanks can now be inserted, but note that they only support transferring one bucket of fluid at a time
+* Fixed pressing 'E' in an elevator GUI closing the screen, even when focused on the elevator naming textbox
+* QoL improvement for sneak-scrolling item modes (Jackhammer & Minigun)
+  Sneak-scrolling now only does mode switch if you start the sneak while holding the item in question.
+  * Allows scrolling through inventory easily if you start sneaking while holding something else, reducing the risk of accidentally doing a mode switch.
+* Fixed Minigun GUI ammo slot locking behaviour if your "pick block" key is bound to something other than the (vanilla default) middle mouse button
+  * GUI side tab now also makes it clear which mouse button or key is used to lock/unlock minigun ammo slots
+
 ## [8.2.5]
 
 ### Changed
