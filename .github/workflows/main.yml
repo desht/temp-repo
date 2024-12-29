@@ -44,4 +44,4 @@ jobs:
         if:
           env.DISCORD_WEBHOOK != null
         with:
-          args: 'Build complete for project {{ EVENT_PAYLOAD.repository.full_name }} (Minecraft ${{ steps.mod_meta.outputs.mc_version}}): ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}.'
+          args: 'Build complete for project {{ EVENT_PAYLOAD.repository.full_name }} (Minecraft ${{ steps.mod_meta.outputs.mc_version}}): <${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}>'
