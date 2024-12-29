@@ -69,7 +69,7 @@ public abstract class AbstractFluidTankBlockEntity extends AbstractTickingBlockE
     private final ItemStackHandler inventory = new BaseItemStackHandler(this, INVENTORY_SIZE) {
         @Override
         public boolean isItemValid(int slot, ItemStack itemStack) {
-            return itemStack.isEmpty() || FluidUtil.getFluidHandler(itemStack).isPresent();
+            return itemStack.isEmpty() || FluidUtil.getFluidHandler(itemStack.copyWithCount(1)).isPresent();
         }
     };
 

@@ -208,6 +208,10 @@ public abstract class AbstractPneumaticCraftMenu<T extends AbstractPneumaticCraf
                 return ItemStack.EMPTY;
         }
 
+        if (srcStack.getCount() == copyOfSrcStack.getCount()) {
+            return ItemStack.EMPTY;
+        }
+
         srcSlot.set(srcStack);
         srcSlot.onQuickCraft(srcStack, copyOfSrcStack);
         srcSlot.onTake(player, srcStack);
