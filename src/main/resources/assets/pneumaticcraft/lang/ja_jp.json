@@ -369,7 +369,7 @@
    "gui.tooltip.item.pneumaticcraft.smart_chest_kit" : "木製のチェストまたは強化されたチェストをスニーク+右クリックすると中身をそのままにしてスマートチェストにアップグレードできます。\n古いチェストはアイテムドロップとして返却されます。",
    "gui.tooltip.item.pneumaticcraft.sourdough_bread" : "普通のパンよりもおいしくて栄養価も高いです！",
    "gui.tooltip.item.pneumaticcraft.spawner_agitator" : "Mobスポナーに設置すると、スポナーアジテーターはプレイヤーがそのエリアを離れたときにスポーンされたエンティティが消滅するのを防ぎます。さらにスポナーはプレイヤーがそのエリアにいない間もスポーンし続けます。Mobファームをやってみませんか？",
-   "gui.tooltip.item.pneumaticcraft.spawner_agitator.apotheosis" : "Apotheosis MODの存在により機能が低下しました。プレイヤーが離れすぎるとMobは出現しませんが、出現したMobはプレイヤーが離れても消滅しません。",
+   "gui.tooltip.item.pneumaticcraft.spawner_agitator.apotheosis" : "Apothic Spawners MODの存在により機能が低下しました。プレイヤーが離れすぎるとMobは出現しませんが、出現したMobはプレイヤーが離れても消滅しません。",
    "gui.tooltip.item.pneumaticcraft.spawner_core" : "スポナーの鼓動する心臓です。加圧スポナーに設置するとそこに含まれるエッセンスからMobがスポーンします。\n\nバニラのスポナーから抽出されたスポナーコアには単一のクリーチャーの純粋なエッセンスが含まれていますが、真空トラップを使用すると複数のエッセンスを含むコアを構築できます...",
    "gui.tooltip.item.pneumaticcraft.stop_worm" : "セキュリティステーションで使用するとハッキングの可能性が高まります。",
    "gui.tooltip.item.pneumaticcraft.tag_filter" : "タグ作業台で作成されます。物流フレームフィルタースロットに挿入したり、アイテムフィルタープログラミングウィジェットで使用して、構成されているアイテムタグでアイテムをフィルター処理したりできます。",
