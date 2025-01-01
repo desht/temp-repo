@@ -17,6 +17,7 @@ Changes are in reverse chronological order; newest changes at the top.
   * Allows scrolling through inventory easily if you start sneaking while holding something else, reducing the risk of accidentally doing a mode switch.
 * Fixed Minigun GUI ammo slot locking behaviour if your "pick block" key is bound to something other than the (vanilla default) middle mouse button
   * GUI side tab now also makes it clear which mouse button or key is used to lock/unlock minigun ammo slots
+* Updated tooltip on Spawner Agitator item to mention Apothic Spawners rather than Apotheosis, which has split into several modules in MC 1.21
 
 ## [8.2.5]
 
