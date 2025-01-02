@@ -17,7 +17,7 @@ public class SpawnerAgitatorItem extends SemiblockItem {
     public void appendHoverText(ItemStack pStack, TooltipContext context, List<Component> pTooltipComponents, TooltipFlag pIsAdvanced) {
         super.appendHoverText(pStack, context, pTooltipComponents, pIsAdvanced);
 
-        if (ModList.get().isLoaded(ModIds.APOTHEOSIS)) {
+        if (ModList.get().isLoaded(ModIds.APOTHIC_SPAWNERS)) {
             pTooltipComponents.add(xlate("gui.tooltip.item.pneumaticcraft.spawner_agitator.apotheosis").withStyle(ChatFormatting.GOLD));
         }
     }
